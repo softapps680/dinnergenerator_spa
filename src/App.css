@@ -1,38 +1,135 @@
 .App {
   text-align: center;
 }
+.top{
+  margin-top: 40px;
+  height: 65px;
+}
+h1{
+  color:#49111c;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:800;
+}
+.card{
+  margin-top: 70px;
+  height:420px; 
+}
+.card-body{
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.card-header{
+  background:#a9927d;
+ color:#49111c;
+ }
+.list {
+  height:270px;
+  width: auto;
+  padding-right:10px;
+  padding-bottom: 10px;
+  text-align: left;
+  overflow-y: scroll;
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list-group{
+  border:none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.btn-primary,.btn-lg,.btn,
+.btn-primary:hover,.btn-lg,.btn,
+.btn-primary:active,.btn-lg:active,.btn
+.btn-primary:visited,.btn-lg,.btn,
+.btn-primary:focus,.btn-lg:focus,.btn
+
+{
+  color:#fff;
+  background-color: #a9927d;
+  border-color: #0a0908 ;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: medium;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+  background: #5e503f;
+  border-color: #0a0908 ;
+}
+
+h3, h5{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  }
+h5{
+  color:#5e503f;
+}
+.link{
+  font-family: 'Open Sans', sans-serif;
+  color:#49111c;
+  font-size: small;
+  font-weight: 700;
+  }
+.txt{
+ color:#5e503f;
+ font-family: 'Open Sans', sans-serif;
+ font-size: small;
+ font-weight: 600;
+}
+ 
+
+@media screen and (min-width: 320px)  {
+  .link{
+    margin-top:25px;
+  }
+  .card-body{
+    margin-top:15px;
+   
+  }
+  .buttonPanel{
+    margin-top:10px;
+   justify-content: center; display: flex;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (max-width: 360px) {
+    .link{
+      margin-top:20px;
+    }
+    .card-body{
+      margin-top:15px;
+    }
+    .buttonPanel{
+      margin-top:10px;
+     justify-content: center; display: flex;
+    }
+
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media screen and (max-width: 411px) {
+  .link{
+    margin-top:15px;
+  }
+  .card-body{
+    margin-top:15px;
+  } 
+  
+  .buttonPanel{
+    margin-top:10px;
+   justify-content: center; display: flex;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+@media screen and (max-width: 414px) {
+  .link{
+    margin-top:15px;
   }
-  to {
-    transform: rotate(360deg);
+  .card-body{
+    margin-top:15px;
+  } 
+  
+  .buttonPanel{
+    margin-top:10px;
+   justify-content: center; display: flex;
   }
+
 }
